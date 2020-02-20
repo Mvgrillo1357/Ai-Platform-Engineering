@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Accident Predictor</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <p>Geographic Clustering Predictions Model - Input your longitude and latitude and receive a prediction of the Severity of the Accident</p>
+    </header>
+    <form action="/predict" method="POST">
+        <input type="number" step="any" name="longitude" accept="longitude/*">
+        <input type="number" step="any" name="latitude"  accept="latitude/*" >
+        <input type="submit" value="Submit">
+    </form>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
